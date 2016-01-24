@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1600px" height="800px" viewBox="0 0 1600 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-54.244832%" id="linearGradient-1">
+            <stop stop-color="#2CC8B6" offset="0%"></stop>
+            <stop stop-color="#EB6956" offset="0%"></stop>
+            <stop stop-color="#34495E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-7" sketch:type="MSArtboardGroup">
+            <rect id="Rectangle-11-Copy" fill-opacity="0.800000012" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" transform="translate(801.000000, 400.000000) rotate(-180.000000) translate(-801.000000, -400.000000) " x="1" y="0" width="1600" height="800"></rect>
+            <rect id="Rectangle-13" stroke="#FFFFFF" stroke-width="5" sketch:type="MSShapeGroup" x="419" y="275" width="763" height="250"></rect>
+            <text id="Michelle-Chan" sketch:type="MSTextLayer" font-family="Bebas Neue" font-size="150" font-weight="313" sketch:alignment="middle" fill="#FFFFFF">
+                <tspan x="458.25" y="453">Michelle </tspan>
+                <tspan x="896.7" y="453" font-weight="bold">Chan</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
