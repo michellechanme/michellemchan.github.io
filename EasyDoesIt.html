@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project Name</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/projects.css" rel="stylesheet">
+    <!-- <link href="css/styles.css" rel="stylesheet"> -->
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+      <!-- <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a> -->
+      <div class="nav2">
+        <div class="left">
+          <div class="logo"><img src="img/michellechan.svg"></div>
+        </div>
+        <div class="right">
+          <div class="home2">
+            <a href="index.html" class="link">HOME</a>
+          </div>
+          <div class="portfolio2">
+            <a href="index.html#portfolio" class="link">PORTFOLIO</a>
+          </div>
+          <div class="about2">
+            <a href="#" class="link">ABOUT</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="display: flex;">
+          <div class="col-md-8" style="margin: auto;">
+            <h1 class="aboutTitle">Easy Does It</h1>
+            <h4 class="designTitle">UI/UX</h4>
+            <p class="description text-left">
+              <p class="header1 text-left">Background</p>
+                <div class="text-left">
+                  Easy Does It is an organization that provides assistance to elderly and individuals with disabilities living independently in Berkeley, CA. Should a disabled person experience an unforeseen crisis or a temporary lapse in his or her own regular attendant care, that person can call Easy Does It for assistance at the time of need. The three main services they provide are:
+                  <ul>
+                    <li>Emergency attendant care services</li>
+                    <li>Wheelchair repair</li>
+                    <li>Transportation services - providing rides for people with disabilities who don’t have an accessible van or can’t access public transportation</li>
+                  </ul>
+                </div>
+              <p class="header1 text-left">Problem</p>
+                <div class="text-left">
+                  With a high demand for Easy Does It’s unparalleled services, this organization needs to move from ad hoc procedures to implementing efficient processes. The current communication flow between the disabled person, dispatcher and attendant is incredibly inefficient.
+                  <ul>
+                    <li>When a disabled person calls the dispatcher to report the problem and their personal information (name, location, problem, etc.), the dispatcher either writes down some of the information he/she can comprehend on a Google doc or doesn’t write anything at all; this means that only a limited number of records are kept.</li>
+                    <li>Since the dispatcher only keeps a limited amount of records, having to make the decision of which attendant he/she should delegate to a particular disabled person is more difficult.</li>
+                    <li>Depending on the disability, having the disabled person call the dispatcher (voice dependent) be their only option can be a barrier to receiving the care they need.</li>
+                    <li>When the service needed from a disabled person is a wheelchair repair, the dispatcher will send off an attendant to inspect the damage. But after examining the damage, the attendant has to travel to a local warehouse to retrieve the necessary part and then travel back to the disabled person to perform the repair which is time inefficient.</li>
+                  </ul>
+                </div>
+              <p class="header1 text-left">Factors to Consider</p>
+                <div class="text-left">
+                  <ul>
+                    <li>There are a variety of disabilities to account for:
+                      <ul>
+                        <li>Some clients have difficulty speaking or cannot talk at all.</li>
+                        <li>If a client is having a stroke, he or she cannot remember words.</li>
+                        <li>People with physical disabilities.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Data collection - what kind of data will this tool collect and how can Easy Does It consolidate and leverage this data, especially within Berkeley.</li>
+                    <li>Productivity - how to design a solution in a way that ensures clients are tended to in a timely manner.</li>
+                  </ul>
+                </div>
+              <p class="header1 text-left">What Easy Does It was looking for:</p>
+                <div class="text-left">
+                  <ul>
+                    <li>Internal component - how can this tool be used for human resources purposes and staffing attendants?</li>
+                    <li>Accessibility of services and ease of use for clients with all kinds of disabilities.</li>
+                    <li>Functionality of the product - creating a platform that simultaneously caters to people with disabilities and consolidates all their services.</li>
+                    <li>Ease of communication and tracking through the platform.</li>
+                  </ul>
+                </div>
+              <p class="header1 text-left">User Research</p>
+                <div class="text-left">I conducted two in-person interviews with organizers and users of Easy Does It’s services; this is what I discovered:
+                  <ul>
+                    <li>There are various types of attendant services offered (showering, dressing, eating, etc.).</li>
+                    <li>There are only four attendants maximum on duty at any given time.</li>
+                    <li>The emergency attendant care services is the most popular service.</li>
+                    <li>If requesting for a wheelchair repair through an app, they wish they could just take a picture of the broken part of the wheelchair to send to the dispatcher.</li>
+                  </ul>
+                </div>
+              <p class="header1 text-left">Old User Flow</p>
+                <div class="text-left">
+                  <img src="documentation/current.jpg" width="603" height="452">
+                  <ol>
+                    <li>In order to reach Easy Does It attendants, clients currently call the dispatcher for services, specifically requesting for help.</li>
+                    <li>The dispatcher will then ask for what the client needs and then jots down their contact information.</li>
+                    <li>Then the dispatcher calls an attendant on duty to provide the client’s service of need, address, and phone number.</li>
+                  </ol>
+                </div>
+              </p>
+              <p class="header1 text-left">New User Flow</p>
+                <div class="text-left">Taking into account what I had learned from the interviews, I came up with a solution to create three connected apps (one for disabled person, dispatcher, and attendant) that would help everyone communicate more efficiently.
+                  <p><i>New Client User Flow</i></p>
+                  <img src="documentation/customer.jpg" width="603" height="452">
+
+                  <p><i>New Dispatcher and Attendant User Flow</i></p>
+                  <img src="documentation/disatt.jpg" width="603" height="452">
+                </div>
+              </p>
+              <p class="header1 text-left">Sketches</p>
+                <div class="text-left">
+                  <p><i>Client</i></p>
+                  <img src="documentation/clienthome.jpg" width="537" height="716">
+
+                  <p><i>Dispatcher</i></p>
+                  <img src="documentation/clienthome.jpg" width="537" height="716">
+                </div>
+              <p class="header1 text-left">Wireframes</p>
+                <div class="text-left">
+                  <p><i>Client</i></p>
+                  <img src="screenshots/client.png" width="607" height="669.16">
+                </div>
+              </p>
+              <p class="header1 text-left">Conclusion</p>
+                <div class="text-left">Graeco persius platonem nec at. Mei cu amet explicari, mel ei docendi noluisse, vix timeam sententiae no. Eu qui repudiare honestatis. Has no inermis noluisse gubergren, maiorum delicatissimi mea id, mel impetus suscipit no. Et usu dico eius maluisset, cu usu dolores dissentias, timeam definitionem eu vis. Duo legimus conceptam ut, ex pro case graece.</div>
+              </p>
+              <p class="header1 text-left">Conclusion</p>
+                <div class="text-left">Graeco persius platonem nec at. Mei cu amet explicari, mel ei docendi noluisse, vix timeam sententiae no. Eu qui repudiare honestatis. Has no inermis noluisse gubergren, maiorum delicatissimi mea id, mel impetus suscipit no. Et usu dico eius maluisset, cu usu dolores dissentias, timeam definitionem eu vis. Duo legimus conceptam ut, ex pro case graece.</div>
+              </p>
+          </div>
+        </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="legals">
+            </ul>
+          </div>
+          <div class="col-md-6 credit">
+            <p>© 2015 Michelle Chan.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

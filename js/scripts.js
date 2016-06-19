@@ -67,41 +67,41 @@ $(function() {
 
 /***************** Nav Transformicon ******************/
 
-document.querySelector("#nav-toggle").addEventListener("click", function() {
-	this.classList.toggle("active");
-});
+// document.querySelector("#nav-toggle").addEventListener("click", function() {
+// 	this.classList.toggle("active");
+// });
 
 /***************** Overlays ******************/
 
-$(document).ready(function(){
-    if (Modernizr.touch) {
-        // show the close overlay button
-        $(".close-overlay").removeClass("hidden");
-        // handle the adding of hover class when clicked
-        $(".img").click(function(e){
-            if (!$(this).hasClass("hover")) {
-                $(this).addClass("hover");
-            }
-        });
-        // handle the closing of the overlay
-        $(".close-overlay").click(function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            if ($(this).closest(".img").hasClass("hover")) {
-                $(this).closest(".img").removeClass("hover");
-            }
-        });
-    } else {
-        // handle the mouseenter functionality
-        $(".img").mouseenter(function(){
-            $(this).addClass("hover");
-        })
-        // handle the mouseleave functionality
-        .mouseleave(function(){
-            $(this).removeClass("hover");
-        });
-    }
-});
+// $(document).ready(function(){
+//     if (Modernizr.touch) {
+//         // show the close overlay button
+//         $(".close-overlay").removeClass("hidden");
+//         // handle the adding of hover class when clicked
+//         $(".img").click(function(e){
+//             if (!$(this).hasClass("hover")) {
+//                 $(this).addClass("hover");
+//             }
+//         });
+//         // handle the closing of the overlay
+//         $(".close-overlay").click(function(e){
+//             e.preventDefault();
+//             e.stopPropagation();
+//             if ($(this).closest(".img").hasClass("hover")) {
+//                 $(this).closest(".img").removeClass("hover");
+//             }
+//         });
+//     } else {
+//         // handle the mouseenter functionality
+//         $(".img").mouseenter(function(){
+//             $(this).addClass("hover");
+//         })
+//         // handle the mouseleave functionality
+//         .mouseleave(function(){
+//             $(this).removeClass("hover");
+//         });
+//     }
+// });
 
 /***************** Flexsliders ******************/
 
@@ -140,4 +140,22 @@ $(window).load(function() {
 		}
 	});
 
+});
+
+/***  Projects section hovering effects	(by gerv)  ***/
+
+$(function() {
+	$('.projects').hover(function(e) {
+		// console.log("in", e.currentTarget);
+		$(e.currentTarget).find('h2').css('color', "#95a5a6")
+		$(e.currentTarget).find('h4').css('color', "#95a5a6")
+		$(e.currentTarget).find('img').css('opacity', "0.85")
+
+	}, function(e) {
+		// console.log("out", e.currentTarget);
+		$(e.currentTarget).find('h2').css('color', "#4A4A4A")
+		$(e.currentTarget).find('h4').css('color', "#4A4A4A")
+		$(e.currentTarget).find('img').css('opacity', "1")
+
+	});
 });
