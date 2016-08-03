@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reflectrum 2.0</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/projects.css" rel="stylesheet">
+    <!-- <link href="css/styles.css" rel="stylesheet"> -->
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+      <!-- <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a> -->
+      <div class="nav2">
+        <div class="left">
+          <a href="index.html"><div class="logo"><img src="img/michellechan.svg"></div></a>
+        </div>
+        <div class="right">
+          <div class="home2">
+            <a href="index.html" class="link">HOME</a>
+          </div>
+          <div class="portfolio2">
+            <a href="index.html#portfolio" class="link">WORK</a>
+          </div>
+          <div class="about2">
+            <a href="about.html" class="link">ABOUT</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="display: flex;">
+          <div class="col-md-8" style="margin: auto;">
+            <h1 class="aboutTitle">Reflectrum 2.0</h1>
+            <h4 class="designTitle">Smart Mirror</h4>
+            <div style="margin-left: 120px; margin-right: 120px;">
+              <img src="img/reflectrum/header.png" style="max-width: 60%; max-height: 60%;">
+            </div>
+              <b><p class="header1 text-left">Background</p></b>
+                <div class="text-left">
+                  For Christmas in 2015 my boyfriend hacked together a smart mirror for me. I took his work and decided to redesign the UI.
+                  <br><br>
+                  Learn about how the hardware was crafted <a href="https://hackaday.io/project/9026-reflectrum-smart-mirror">here</a>.
+                </div>
+              <b><p class="header1 text-left">Role</p></b>
+                <div class="text-left">
+                  UI designer and front-end developer
+                </div>
+              <b><p class="header1 text-left">Factors to Consider</p></b>
+                <div class="text-left">
+                  Hardware
+                  <ul>
+                    <li>The screen that displayed content was smaller than the mirror itself. This means that if the background color of the screen was red, the mirror would look like a red screen with thick black edges.</li>
+                    <li>Navigation through the mirror was done with a custom built controller.</li>
+                  </ul>
+                  Software
+                  <ul>
+                    <li>The software was built with web development tools (Electron, HTML, CSS, ReactJS).</li>
+                  </ul>
+                </div>
+              <b><p class="header1 text-left">Ideation 1.0</p></b>
+                <div class="text-left">
+                  With my boyfriend and I being the primary (if not the only) users, validating features was relatively easy. Things we cared about was being able to frequently view time easily and occasionally check weather and calendar events.
+                  <br><br>
+                  We also thought about what happens if we’re away from the mirror for a certain amount of time and subsequently decided to include a screensaver page. After brainstorming what screensavers would be useful (and fun), we came up with a summary (includes time, date, and weather), Tetris (because I love Tetris), and clock.
+                  <br><br>
+                  Since I keep a booklet of inspirational quotes, I also thought it’d be neat to display them in the mirror.
+                  <br><br>
+                  After weeks of building, we had our first prototype:
+                  <br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/R5DdSldjd2U" frameborder="0" allowfullscreen></iframe>
+                  <br><br>
+                  <div class="text-left">
+                    <p><i>Reflectrum 1.0 hung up on the wall!</i></p>
+                    <img src="img/mirror.jpg" style="max-width: 60%; max-height: 60%;">
+                  </div>
+                </div>
+                <b><p class="header1 text-left">Usability</p></b>
+                  <div class="text-left">
+                    After a week of using the mirror, I learned about how I could improve the user experience. Turns out I hardly used the inspirational quotes page. I also didn’t need an in depth page on weather since I used my phone’s weather app. But I knew I cared about knowing the current temperature and how the weather was currently like at a glance.
+                    <br><br>
+                    I also wanted less content filling the screen since I found it difficult to use the mirror for it’s original purpose.
+                  </div>
+              <b><p class="header1 text-left">Ideation 2.0</p></b>
+                <div class="text-left">
+                  With the gained knowledge in mind, I decided to completely change the user flow. I wanted to simplify the entire experience. All that was needed was time, date, weather summary and fun screensavers.
+                  <br><br>
+                  <img src="img/reflectrum/ia.png" style="max-width: 90%; max-height: 90%;">
+                  <br>
+                  I sketched out some new concepts:
+                  <div style="display: flex; flex-direction: row;">
+                    <div>
+                      <p><i>First Concept</i></p>
+                      <img src="img/reflectrum/first.png" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div>
+                      <p><i>Second Concept</i></p>
+                      <img src="img/reflectrum/second.png" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                  </div>
+                  <br><br>
+                  I decided to further explore the second concept because not only did it take less space on the mirror, it was also more simple (exactly what I was aiming for).
+                </div>
+              <b><p class="header1 text-left">Mockups</p></b>
+                <div class="text-left">
+                  <p><b>Home</b></p>
+                  <img src="img/reflectrum/home.png" style="max-width: 50%; max-height: 50%;">
+                  <p>Imagery in screensaver icon indicates which screensaver is currently selected.</p>
+                  <br>
+                  <p><b>Screensavers</b></p>
+                  <div style="display: flex; flex-direction: row;">
+                    <div>
+                      <p><i>Stars</i></p>
+                      <img src="img/reflectrum/screensaver_stars.png" style="max-width: 80%; max-height: 80%;">
+                    </div>
+                    <div>
+                      <p><i>Rubik's Cube</i></p>
+                      <img src="img/reflectrum/screensaver_cube.png" style="max-width: 80%; max-height: 80%;">
+                    </div>
+                  </div>
+                  <div style="display: flex; flex-direction: row;">
+                    <div>
+                      <p><i>Tetris</i></p>
+                      <img src="img/reflectrum/screensaver_tetris.png" style="max-width: 80%; max-height: 80%;">
+                    </div>
+                    <div>
+                      <p><i>None</i></p>
+                      <img src="img/reflectrum/screensaver_none.png" style="max-width: 80%; max-height: 80%;">
+                    </div>
+                  </div>
+                  <br><br>
+                  <p><b>Screensaver Start Time</b></p>
+                  <img src="img/reflectrum/screensaver_startafter.png" style="max-width: 50%; max-height: 50%;">
+                  <br><br>
+                  Prototype to come!
+                </div>
+              <b><p class="header1 text-left">Conclusion</p></b>
+              <div class="text-left">
+                Working on a project that combined hardware and web was a new experience for me. There were many new types of details to think about. Working on Reflectrum has helped me learn the value of user testing. As a designer I can assume but will learn the most the moment I conduct user research. Through usability tests is how I discover what people really want.
+                <br><br>
+                I am incredibly thankful for such a thoughtful boyfriend who spent countless hours working with me on the project. Reflectrum turned out to be a great learning experience together!
+              </div>
+          </div>
+        </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="legals">
+            </ul>
+          </div>
+          <div class="col-md-6 credit">
+            <p>© 2015-2016 Michelle Chan.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

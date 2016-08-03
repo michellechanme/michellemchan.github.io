@@ -8,8 +8,10 @@
     addListeners();
 
     function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        var element = document.querySelector('.hero')
+
+        width = parseInt(window.getComputedStyle(element).width);
+        height = parseInt(window.getComputedStyle(element).height);
         target = {x: width/2, y: height/2};
 
         largeHeader = document.getElementById('large-header');
@@ -97,8 +99,10 @@
     }
 
     function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        var element = document.querySelector('.hero')
+
+        width = parseInt(window.getComputedStyle(element).width);
+        height = parseInt(window.getComputedStyle(element).height);
         largeHeader.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;

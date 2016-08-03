@@ -182,7 +182,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ==========================================================================
 Global Styles
 ========================================================================== */
-a { color: #2c3e50; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+a { color: #2980b9; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #527191; text-decoration: none; }
 p { color: #7f8c8d; word-spacing: 0px; line-height: 25px; font-size: 14px; }
 h2 { font-size: 15px; color: #4A4A4A; text-transform: uppercase; font-weight: bold; }
@@ -470,4 +470,10 @@ Waypoints
 
 .link:hover {
 	color: #C7C9CA;
+}
+
+.resume {
+	border: 1px #5C5C5C solid;
+	padding: 15px;
+	margin: auto;
 }
