@@ -29,9 +29,9 @@ html { font-size: 100%; /* 1 */
 html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 /* * Addresses `font-family` inconsistency between `textarea` and other form
 * elements. */
-html, button, input, select, textarea { font-family: 'Varela Round', sans-serif; }
+html, button, input, select, textarea { font-family: 'Raleway', sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
-body { margin: 0; font-family: 'Varela Round', sans-serif; }
+body { margin: 0; font-family: 'Work Sans', sans-serif; }
 /* ==========================================================================
 Links
 ========================================================================== */
@@ -55,7 +55,7 @@ h6 { font-size: 0.75em; margin: 2.33em 0; }
 /* * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome. */
 abbr[title] { border-bottom: 1px dotted; }
 /* * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
-b, strong { font-weight: bold; }
+b, strong { font-weight: bold;}
 blockquote { margin: 1em 40px; }
 /* * Addresses styling not present in Safari 5 and Chrome. */
 dfn { font-style: italic; }
@@ -94,7 +94,18 @@ Embedded content
 * 2. Improves image quality when scaled in IE 7. */
 
 img { border: 0; /* 1 */
--ms-interpolation-mode: bicubic; /* 2 */ }
+		-ms-interpolation-mode: bicubic; /* 2 */
+		transition: opacity .60s ease-in-out;
+   -moz-transition: opacity .60s ease-in-out;
+   -webkit-transition: opacity .60s ease-in-out;
+}
+
+h2, h4 {
+	-ms-interpolation-mode: bicubic; /* 2 */
+	transition: color .30s ease-in-out;
+	-moz-transition: color .30s ease-in-out;
+	-webkit-transition: color .30s ease-in-out;
+}
 /* * Corrects overflow displayed oddly in IE 9. */
 svg:not(:root) { overflow: hidden; }
 /* ==========================================================================
@@ -172,10 +183,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 Global Styles
 ========================================================================== */
 a { color: #2980b9; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
-a:hover, a:focus { color: #3498db; text-decoration: none; }
-p { color: #7f8c8d; word-spacing: 1px; line-height: 25px; font-size: 14px; }
-h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
-h2::after { content: " "; border: solid 2px #3498db; display: block; width: 35px; margin: 25px auto; }
+a:hover, a:focus { color: #527191; text-decoration: none; }
+p { color: #7f8c8d; word-spacing: 0px; line-height: 25px; font-size: 14px; }
+h2 { font-size: 15px; color: #4A4A4A; text-transform: uppercase; font-weight: bold; }
+/*h2::after { content: " "; border: solid 2px #3498db; display: block; width: 35px; margin: 25px auto; }*/
 .section-padding { padding: 90px 0 100px }
 .dark-bg { background: #f3f5f8; }
 .light-bg { background-color: #fff; }
@@ -261,8 +272,8 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 .overlay-effect .overlay { bottom: 0; left: 0; right: 0; width: 100%; height: 100%; opacity: 0; }
 .overlay-effect .overlay a.expand { left: 0; right: 0; bottom: 47%; margin: 0 auto -30px auto; }
 .overlay-effect .img.hover .overlay { height: 100%; opacity: 1; }
-.img img { width: -webkit-calc(100% + 40px) !important; width: calc(100% + 40px) !important; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; -webkit-transform: translate3d(-40px, 0, 0); transform: translate3d(-40px, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
-.img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
+.img img { width: calc(100%); -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; }
+/*.img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }*/
 .designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50px; }
 /* ==========================================================================
 Subscribe
@@ -286,8 +297,8 @@ Team
 ul.social-buttons { list-style: none; margin: 0; padding: 0; }
 ul.social-buttons li { display: inline-block; margin-right: 10px; }
 ul.social-buttons li:last-child { margin-right: 0; }
-.social-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #2980b9; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center; }
-.social-btn:hover, .social-btn:focus { background: #3994d1; color: #fff; }
+.social-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #2c3e50; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center; }
+.social-btn:hover, .social-btn:focus { background: rgba(46, 64, 93, 0.9); color: #fff; }
 .social { margin-top: 25px }
 /* ==========================================================================
 Contact
@@ -296,13 +307,13 @@ Contact
 .up-btn:hover, up-btn:focus { color: #fff; background: rgba(57, 148, 209, 1); }
 .contact-details { margin: 70px 0; }
 .contact-details h2 { font-size: 20px; }
-.contact-details h2 span { display: block; color: #3498db; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
+.contact-details h2 span { display: block; color: #4A4A4A; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
 .contact-wrap { position: relative; }
 /* ==========================================================================
 Footer
 ========================================================================== */
 footer a { color: #a1a9b0; }
-footer { background-color: #2c3e50; padding: 40px 0 30px; }
+footer { background-color: #bdc3c7; padding: 40px 0 30px; }
 footer p { color: #fff; }
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
 ul.legals li { display: inline-block; }
@@ -365,4 +376,104 @@ Waypoints
 	0%   { top:0px;  opacity: 0;}
 	30%  { top:10px; opacity: 1;}
 	100% { top:25px; opacity: 0;}
+}
+
+.tagline {
+	font-size: 20px;
+}
+
+.link {
+	color: #ecf0f1;
+}
+
+.nav2 {
+	background-color: rgba(33, 47, 62, 1);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.right, .left {
+	display: flex;
+	flex-direction: row;
+}
+
+.right {
+	margin-right: 20px;
+}
+
+.logo {
+	flex: 1;
+	margin: auto;
+	padding: 20px;
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+.logo:hover {
+	opacity: .9;
+}
+
+.home2, .portfolio2, .about2 {
+	flex: 1;
+	margin: auto;
+	padding: 20px;
+	font-size: 16px;
+}
+
+.description {
+	font-size: 15px;
+	margin: 60px 150px;
+}
+
+@media all and (max-width: 500px) {
+	.nav2 {
+		flex-direction: column;
+		position: relative;
+	}
+
+	.section-padding {
+		padding: 0 0 100px;
+	}
+
+	.right, .left {
+		flex-direction: column;
+	}
+
+	.logo, .portfolio2, .about2 {
+		padding: 10px;
+	}
+
+	.description {
+		margin: 10px 10px 40px 10px;
+	}
+}
+
+.designType {
+	color: #5C5C5C;
+}
+
+.aboutTitle {
+	color: rgb(33, 47, 62);
+	font-weight: bold;
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+
+.link {
+	color: #ecf0f1;
+}
+
+.link:hover {
+	color: #C7C9CA;
+}
+
+.resume {
+	border: 1px #5C5C5C solid;
+	padding: 15px;
+	margin: auto;
 }
