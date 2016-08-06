@@ -516,6 +516,7 @@ Waypoints
 
 	.logo, .portfolio2, .about2 {
 		padding: 10px;
+		margin-left: 0px;
 	}
 
 	.description {
@@ -528,7 +529,7 @@ Waypoints
 	}
 
 	.drive-picture {
-		margin: 0px;
+		margin: 0px 0px;
 	}
 
 	.tesla-picture {
