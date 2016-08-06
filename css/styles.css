@@ -463,12 +463,12 @@ Waypoints
   margin-right: 0px;
 }
 
-.hero {
+.hero h1 {
 	letter-spacing: 12px;
 }
 
 @media all and (max-width: 500px) {
-	.hero {
+	.hero h1 {
 		letter-spacing: 0px;
 	}
 
