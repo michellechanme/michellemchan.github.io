@@ -454,6 +454,26 @@ Waypoints
 	.description {
 		margin: 10px 10px 40px 10px;
 	}
+
+	.work-cards {
+			margin-left: auto;
+			margin-right: auto;
+	}
+
+	.drive-picture {
+		margin: 0px 0px;
+	}
+
+	.tesla-picture {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.easy-picture {
+		max-width: 70%;
+		max-height: 70%;
+		margin: 0px;
+	}
 }
 
 .designType {
@@ -475,4 +495,33 @@ Waypoints
 .header1 {
 	font-size: 26px;
 	color: #2c3e50;
+}
+
+.drive-picture {
+	margin: 0px 200px;
+}
+
+.tesla-picture {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+.easy-picture {
+	max-width: 35%;
+	max-height: 35%;
+	margin: 0px 200px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
