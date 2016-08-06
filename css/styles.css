@@ -456,6 +456,10 @@ Waypoints
 	    margin-left: auto;
 	    margin-right: auto;
 	}
+
+	.drive-picture {
+		margin: 0px;	
+	}
 }
 
 .designType {
@@ -489,4 +493,8 @@ Waypoints
   justify-content: space-around;
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.drive-picture {
+	margin: 0px 200px;
 }
