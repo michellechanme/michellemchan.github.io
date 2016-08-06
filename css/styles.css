@@ -430,53 +430,6 @@ Waypoints
 	margin: 60px 150px;
 }
 
-@media all and (max-width: 500px) {
-	.hero {
-		letter-spacing: 0px;
-	}
-
-	.nav2 {
-		flex-direction: column;
-		position: relative;
-	}
-
-	.section-padding {
-		padding: 0 0 100px;
-	}
-
-	.right, .left {
-		flex-direction: column;
-	}
-
-	.logo, .portfolio2, .about2 {
-		padding: 10px;
-	}
-
-	.description {
-		margin: 10px 10px 40px 10px;
-	}
-
-	.work-cards {
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.drive-picture {
-		margin: 0px;
-	}
-
-	.tesla-picture {
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-
-	.easy-picture {
-		max-width: 70%;
-		max-height: 70%;
-		margin: 0px;
-	}
-}
-
 .designType {
 	color: #5C5C5C;
 }
@@ -541,4 +494,51 @@ Waypoints
 
 .hero {
 	letter-spacing: 12px;
+}
+
+@media all and (max-width: 500px) {
+	.hero {
+		letter-spacing: 0px;
+	}
+
+	.nav2 {
+		flex-direction: column;
+		position: relative;
+	}
+
+	.section-padding {
+		padding: 0 0 100px;
+	}
+
+	.right, .left {
+		flex-direction: column;
+	}
+
+	.logo, .portfolio2, .about2 {
+		padding: 10px;
+	}
+
+	.description {
+		margin: 10px 10px 40px 10px;
+	}
+
+	.work-cards {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.drive-picture {
+		margin: 0px;
+	}
+
+	.tesla-picture {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.easy-picture {
+		max-width: 70%;
+		max-height: 70%;
+		margin: 0px;
+	}
 }
