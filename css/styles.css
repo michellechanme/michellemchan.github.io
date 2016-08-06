@@ -458,7 +458,18 @@ Waypoints
 	}
 
 	.drive-picture {
-		margin: 0px;	
+		margin: 0px;
+	}
+
+	.tesla-picture {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.easy-picture {
+		max-width: 70%;
+		max-height: 70%;
+		margin: 0px;
 	}
 }
 
@@ -496,5 +507,16 @@ Waypoints
 }
 
 .drive-picture {
+	margin: 0px 200px;
+}
+
+.tesla-picture {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+.easy-picture {
+	max-width: 35%;
+	max-height: 35%;
 	margin: 0px 200px;
 }

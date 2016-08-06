@@ -417,9 +417,8 @@ Waypoints
 .logo {
 	flex: 1;
 	margin: auto;
-	padding: 20px;
+	padding: 20px 40px;
 	font-size: 16px;
-	margin-left: 20px;
 }
 
 .home2, .portfolio2, .about2 {
