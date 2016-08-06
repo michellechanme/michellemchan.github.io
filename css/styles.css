@@ -313,7 +313,7 @@ Contact
 Footer
 ========================================================================== */
 footer a { color: #a1a9b0; }
-footer { background-color: #303840; padding: 40px 0 30px; }
+footer { background-color: #303840; padding: 15px 30px; }
 footer p { color: #fff; }
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
 ul.legals li { display: inline-block; }
@@ -451,6 +451,11 @@ Waypoints
 	.description {
 		margin: 10px 10px 40px 10px;
 	}
+
+	.work-cards {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
 }
 
 .designType {
@@ -476,4 +481,12 @@ Waypoints
 	border: 1px #5C5C5C solid;
 	padding: 15px;
 	margin: auto;
+}
+
+.work-cards {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-right: 60px;
 }
