@@ -460,8 +460,8 @@ Waypoints
 	display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .hero h1 {
@@ -492,6 +492,11 @@ Waypoints
 
 	.description {
 		margin: 10px 10px 40px 10px;
+	}
+
+	.work-cards {
+	  margin-left: 0px;
+	  margin-right: 0px;
 	}
 
 }
